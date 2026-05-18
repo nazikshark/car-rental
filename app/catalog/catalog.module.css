@@ -1,0 +1,51 @@
+.filtersWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 84px;
+  margin-bottom: 56px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px 32px;
+  padding: 0 128px;
+  align-items: start;
+}
+
+.loader {
+  text-align: center;
+  padding: 60px;
+  font-size: 18px;
+  color: #3470ff;
+}
+
+.loadMore {
+  display: flex;
+  justify-content: center;
+  margin: 80px;
+  /* padding: 40px; */
+}
+
+.loadMoreBtn {
+  background-color: transparent;
+  width: 156px;
+  height: 44px;
+  padding: 12px 38px;
+  background: transparent;
+  border: 1px solid #3470ff;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.loadMoreBtn:hover {
+  background: #f0f0f0;
+}
+
+.loadMoreBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

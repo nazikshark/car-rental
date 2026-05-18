@@ -1,0 +1,193 @@
+.filters {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.field label {
+  font-size: 12px;
+  color: rgba(18, 20, 23, 0.5);
+}
+
+.field select {
+  padding: 12px 64px 12px 16px;
+  border: none;
+  border-radius: 14px;
+  background: #f7f7f7;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1c1c;
+  min-width: 180px;
+  cursor: pointer;
+  appearance: none;
+}
+
+.selectWrap {
+  position: relative;
+}
+
+.selectWrap select {
+  /* твої існуючі стилі для .field select */
+  padding: 12px 64px 12px 16px;
+  border: none;
+  border-radius: 14px;
+  background: #f7f7f7;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1c1c1c;
+  min-width: 180px;
+  cursor: pointer;
+  appearance: none;
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.mileage {
+  display: flex;
+  border: none;
+  border-radius: 14px;
+  overflow: hidden;
+  background: #f7f7f7;
+}
+
+.inputWrapperFrom,
+.inputWrapperTo {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputWrapperFrom {
+  border-right: 1px solid #DADDE1;
+}
+
+.inputWrapperFrom::before {
+  content: "From ";
+  position: absolute;
+  left: 14px;
+  font-size: 14px;
+  color: #101828;
+  pointer-events: none;
+}
+
+.inputWrapperTo::before {
+  content: "To ";
+  position: absolute;
+  left: 14px;
+  font-size: 14px;
+  color: #101828;
+  pointer-events: none;
+}
+
+.mileage input {
+  width: 130px; 
+  padding: 14px 14px 14px 14px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  color: #101828;
+  outline: none;
+}
+
+.inputWrapperFrom input {
+  padding-left: 54px; 
+}
+
+.inputWrapperTo input {
+  padding-left: 36px; 
+}
+
+.mileage input::-webkit-outer-spin-button,
+.mileage input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.btn {
+  padding: 12px 51px;
+  background: #3470ff;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn:hover {
+  background: #0B44CD;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdownBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #f7f7f7;
+  border: none;
+  border-radius: 14px;
+  min-width: 224px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.placeholder {
+  color: #101828;
+}
+
+.selected {
+  color: #101828;
+  font-weight: 500;
+}
+
+.dropdownList {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 8px 0;
+  z-index: 10;
+  max-height: 272px;
+  overflow-y: auto;
+}
+
+.dropdownItem {
+  padding: 10px 18px;
+  font-size: 16px;
+  color: #8D929A;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.dropdownItem:hover {
+  color: #101828;
+}
+
+.activeItem {
+  color: #101828;
+  font-weight: 600;
+}
